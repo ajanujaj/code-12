@@ -1,0 +1,25 @@
+n=672
+nadd=n
+
+while len(str(n))>1:
+    mul=1
+    n1=n
+    if mul>0:
+        while n1>0:
+            mul =mul*(n1%10)
+            n1=int(n1/10)
+        n=mul
+    else:
+        n=n
+    
+print(n)
+
+while len(str(nadd))>1:
+    add=0
+    nad=nadd
+    while nad>0:
+        add+=(nad%10)
+        nad=int(nad/10)
+    nadd=add
+    
+print(nadd)
